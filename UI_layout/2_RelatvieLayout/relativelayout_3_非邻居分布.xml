@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--相对布局: 相对其他控件给新控件定位-->
+
+    <Button
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#D4E157"
+        android:text="中心按钮" />
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/center"
+        android:layout_marginTop="40dp"
+        android:text="左上角按钮" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/center"
+        android:layout_marginTop="40dp"
+        android:text="右上角按钮" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/center"
+        android:text="左下角按钮"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        />
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:text="右下角按钮" />
+</RelativeLayout>
