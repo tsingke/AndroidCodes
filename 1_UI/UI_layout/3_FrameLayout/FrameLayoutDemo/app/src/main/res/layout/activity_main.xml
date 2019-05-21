@@ -2,14 +2,14 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:foreground="@mipmap/QQ"
+    android:foreground="@drawable/ic_launcher_foreground"
     android:foregroundGravity="center">
 
     <TextView
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:layout_gravity="center"
-        android:text="我是文本控件"
+        android:text="文本控件"
         android:textSize="25sp"
         android:gravity="bottom|right"
         android:background="#FFEB3B"/>
