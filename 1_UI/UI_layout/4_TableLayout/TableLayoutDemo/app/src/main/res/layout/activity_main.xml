@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:stretchColumns="1"
+    android:shrinkColumns="2"
+    android:collapseColumns="">
+    <Button
+        android:text="TableRow外定义的控件默认占用1整行"
+        android:textColor="#831D1B"
+        android:background="#D4E157"
+        />
+    <TableRow>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="0列：按钮" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="1列:不忘初心 牢记使命-拉伸显示" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="2列：按钮" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="0列：按钮" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="1列：我奋斗，我幸福-拉伸显示" />
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="2列：按钮" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="0列：按钮" />
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_span="2"
+            android:text="1列：横跨2格显示按钮" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btn_last"
+            android:text="0列：横跨3格显示按钮"
+            android:textColor="#FFEE58"
+            android:background="#D14877"
+            android:layout_span="3"
+            />
+    </TableRow>
+
+</TableLayout>

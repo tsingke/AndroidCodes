@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="计算器界面-表格布局"
+            android:background="#FFFFFF"
+            android:textSize="25sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="380dp"
+        android:stretchColumns="0,1,2，3">
+        <!--第一行-->
+        <TableRow>
+
+            <Button android:text="7" />
+
+            <Button android:text="8" />
+
+            <Button android:text="9" />
+            <Button
+                android:layout_column="0"
+                android:text="/" />
+        </TableRow>
+        <!--第二行-->
+        <TableRow>
+
+            <Button
+                android:layout_column="0"
+                android:text="4" />
+
+            <Button
+                android:layout_column="1"
+                android:text="5" />
+
+            <Button
+                android:layout_column="2"
+                android:text="6" />
+            <Button
+                android:layout_column="0"
+                android:text="*" />
+        </TableRow>
+
+        <!--第三行-->
+        <TableRow>
+
+            <Button
+                android:layout_column="0"
+                android:text="1" />
+
+            <Button
+                android:layout_column="1"
+                android:text="2" />
+
+            <Button
+                android:layout_column="2"
+                android:text="3" />
+            <Button
+                android:layout_column="0"
+                android:text="-" />
+        </TableRow>
+        <!--第四行-->
+        <TableRow>
+
+            <Button
+                android:layout_column="0"
+                android:text="0" />
+
+            <Button
+                android:layout_column="1"
+                android:text="." />
+
+            <Button
+                android:layout_column="2"
+                android:text="=" />
+            <Button
+                android:layout_column="0"
+                android:text="+" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
