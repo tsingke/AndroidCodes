@@ -32,5 +32,4 @@ b. 给出布局设计源码(建议采用开源软件Highlight将布局源码格�
 c. 给出APP程序运行界面完整效果图。
 
 ```
-![效果图](https://github.com/tsingke/AndroidCodes/blob/master/1_UI/Calculate/%E8%AE%A1%E7%AE%97%E5%99%A8UI%E8%AE%BE%E8%AE%A1.png)
-
+<img src="https://github.com/tsingke/AndroidCodes/blob/master/1_UI/Calculate/%E8%AE%A1%E7%AE%97%E5%99%A8UI%E8%AE%BE%E8%AE%A1.png" width=300 height=538 />
