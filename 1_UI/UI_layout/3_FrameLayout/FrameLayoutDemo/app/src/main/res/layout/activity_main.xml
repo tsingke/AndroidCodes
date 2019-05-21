@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@mipmap/QQ"
+    android:foregroundGravity="center">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:text="我是文本控件"
+        android:textSize="25sp"
+        android:gravity="bottom|right"
+        android:background="#FFEB3B"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="#E91E63"
+        android:gravity="right|bottom"
+        android:text="按钮1"
+        android:textColor="#FFEB3B"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:background="#4CAF50"
+        android:gravity="right|bottom"
+        android:text="按钮2"
+        android:textColor="#FFEB3B"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="#434CFF"
+        android:gravity="right|bottom"
+        android:text="按钮3"
+        android:textColor="#FFEB3B"
+        android:textSize="25sp" />
+
+</FrameLayout>
