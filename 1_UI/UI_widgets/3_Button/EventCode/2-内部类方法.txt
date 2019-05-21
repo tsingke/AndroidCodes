@@ -1,0 +1,216 @@
+package com.example.buttonevent;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity
+{
+
+    private  Button mBtnreg;
+    private  Button mBtnlog;
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+//        1.定位要监视的按钮(监听源)
+         mBtnreg = (Button) findViewById(R.id.btn_reg);
+         mBtnlog = (Button) findViewById(R.id.btn_log);
+
+        //2.为各个按钮注册一种监听器(监听者)
+        mBtnreg.setOnClickListener(new mylistener());
+        mBtnlog.setOnClickListener(new mylistener());
+    }
+
+    //定义一个具体的类,实现包 View 内的抽象接口onClickListener,并实现其内的唯一方法onClic()
+    class mylistener implements View.OnClickListener
+    {
+        @Override
+        //监听事件
+        public void onClick(View v)
+        {
+            switch (v.getId())
+            {
+                case R.id.btn_reg://注册按钮
+                    Toast.makeText(MainActivity.this, "恭喜,已经完成注册!", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.btn_log://登陆按钮
+                    Toast.makeText(MainActivity.this,"请您登陆!",Toast.LENGTH_SHORT).show();
+                    break;
+            }
+        }
+    }
+
+
+}
+----------xml--------------
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context=".MainActivity">
+
+    <!--TextView 放置文字说明-->
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66BB6A"
+        android:gravity="center"
+        android:text="移动计算课程在线注册页面"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--ImageView 显示主题logo-->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/phd" />
+
+    <!--表格布局 放置注册信息-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <!--第一行:姓名栏-->
+        <TableRow>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:gravity="right"
+                android:text="学号:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="253dp"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="请输入个人学号" />
+        </TableRow>
+        <!--第二行:密码栏-->
+        <TableRow>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:gravity="right"
+                android:text="密码:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="253dp"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="请输入登陆密码" />
+        </TableRow>
+        <!--第三行:手机栏-->
+        <TableRow>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:gravity="right"
+                android:text="手机:"
+
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="253dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="请输入手机号码" />
+        </TableRow>
+
+        <!--第四行:邮箱栏-->
+        <TableRow>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:gravity="right"
+                android:text="邮箱:"
+
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="253dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="请输入个人邮箱" />
+        </TableRow>
+    </TableLayout>
+
+
+    <!--Button 按钮: 提交信息,-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#EC407A"
+            android:text="注册"
+            android:layout_marginLeft="90dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            />
+
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_reg"
+            android:layout_marginLeft="60dp"
+
+            android:background="#66BB6A"
+            android:text="登陆"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_patch"
+            android:layout_below="@id/btn_reg"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* 自觉遵守课堂纪律,认真完成课程任务"
+            android:textSize="15sp"
+            android:textColor="#81000000"
+            android:textStyle="italic"
+
+            android:gravity="center"
+
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
