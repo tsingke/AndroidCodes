@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <!--文本控件:描述页面功能-->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="下面通过绝对布局方式设置控件的摆放位置"
+    android:background="#FFEB3B"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:textColor="#E91E63"
+    />
+    <!--绝对定位法设置控件位置(水平距离 x,垂直 距离y )-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="50dp"
+        android:layout_y="90dp"
+        android:text="按钮 1"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="120dp"
+        android:layout_y="200dp"
+        android:text="按钮 2"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="120dp"
+        android:layout_y="400dp"
+        android:text="按钮 3"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="50dp"
+        android:layout_y="490dp"
+        android:text="按钮 4"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="290dp"
+        android:layout_y="300dp"
+        android:text="按钮 5"
+        android:textSize="20sp"/>
+
+
+
+
+</AbsoluteLayout>
