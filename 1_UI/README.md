@@ -33,3 +33,8 @@ c. 给出APP程序运行界面完整效果图。
 
 ```
 <img src="https://github.com/tsingke/AndroidCodes/blob/master/1_UI/Calculate/%E8%AE%A1%E7%AE%97%E5%99%A8UI%E8%AE%BE%E8%AE%A1.png" width=300 height=538 />
+
+### 按钮点击事件演示效果图
+---
+
+<img src="https://github.com/tsingke/AndroidCodes/blob/master/1_UI/UI_widgets/3_Button/ButtonEvent.jpg" width=300 height=538 /> 
