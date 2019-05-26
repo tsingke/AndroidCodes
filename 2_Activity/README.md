@@ -3,7 +3,7 @@
 `Activity` :    activity的生命周期演示 
 
 
-<img src="https://github.com/tsingke/AndroidCodes/blob/master/2_Activity/lifecycle.png" width=700 height=370 /> 
+<img src="https://github.com/tsingke/AndroidCodes/blob/master/2_Activity/lifetime/lifecycle.png" width=700 height=370 /> 
 
 
 `Activity` :    activity启动方式演示 
