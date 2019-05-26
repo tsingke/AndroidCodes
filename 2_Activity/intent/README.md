@@ -6,7 +6,7 @@
   
 * 通过按钮单击跳转事件启动另外的一个activity
 
-<img src="https://github.com/tsingke/AndroidCodes/blob/master/2_Activity/intent/MainActivity.png" width=700 height=370 />  <img src="https://github.com/tsingke/AndroidCodes/blob/master/2_Activity/intent/RegActivity.png" width=700 height=370 />   
+<img src="https://github.com/tsingke/AndroidCodes/blob/master/2_Activity/intent/MainActivity.png" width=400 height=708 />  <img src="https://github.com/tsingke/AndroidCodes/blob/master/2_Activity/intent/RegActivity.png" width=400 height=708 />   
 
 
 
