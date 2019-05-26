@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context=".MainActivity">
+
+    <!--TextView 放置文字说明-->
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#81C784"
+        android:gravity="center"
+        android:text="移动计算课程在线登陆页面"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--ImageView 显示主题logo-->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/phd" />
+
+    <!--表格布局 放置注册信息-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <!--第一行:姓名栏-->
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:gravity="right"
+                android:text="学号:"
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="请输入个人学号" />
+        </TableRow>
+        <!--第二行:密码栏-->
+        <TableRow>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:gravity="right"
+                android:text="密码:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                android:gravity="center"
+                android:hint="请输入登陆密码"
+                android:inputType="textPassword"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <!--Button 按钮: 提交信息-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--登陆按钮-->
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:background="#66BB6A"
+            android:text="登陆"
+            android:textColor="#ffffff"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_patch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_log"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="* 自觉遵守课堂纪律,认真完成课程任务"
+            android:textColor="#81000000"
+            android:textSize="15sp"
+
+            android:textStyle="italic" />
+        <!--注册按钮-->
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/btn_log"
+            android:background="#F06292"
+            android:text="注册"
+            android:textColor="#ffffff"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>
