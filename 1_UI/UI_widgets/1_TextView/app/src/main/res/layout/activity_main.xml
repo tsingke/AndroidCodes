@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="2dp"
     tools:context=".MainActivity">
 
@@ -10,15 +11,66 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:gravity="center"
-       android:text="TextView功能演示"
+
+       android:text="TextView演示"
+       android:textColor="#FFFF"
+       android:background="#E91E63"
        android:textSize="20sp"
        android:textStyle="bold"
-       android:drawableLeft=""
-       android:textColor="#FFEB3B"
-       android:background="#E91E63"
-
-
        />
 
+<!--设置文字内容，文字大小，文字颜色，文字类型，-->
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:layout_marginTop="20dp"
+       android:text="文字倾斜居中显示"
+       android:textColor="#009688"
+       android:textSize="30sp"
+       android:textStyle="italic"
+       />
 
+<!--2.设置文字中间省略，所有字母大写-->
+   <TextView
+       android:layout_marginTop="20dp"
+       android:layout_width="397dp"
+       android:layout_height="wrap_content"
+       android:text="Talk is cheap，show me the code！中间自动省略"
+       android:ellipsize="middle"
+       android:singleLine="true"
+       android:textAllCaps="true"
+       android:textColor="#3F51B5"
+       android:textSize="25sp" />
+
+
+   <!--3.文字中含有邮件，网页，电话时，添加超链接-->
+
+   <TextView
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="超链接显示网页：www.baidu.com"
+       android:textSize="25sp"
+       android:autoLink="web"
+       android:ellipsize="middle"
+       android:textColorLink="#B02BCE"
+       />
+   
+   <!--4. 密码框黑点显示-->
+   <TextView
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="密码是88888888"
+       android:inputType="textPassword"
+       />
+
+   <!--4. 左侧添加图片显示-->
+   <TextView
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="密码是88888888"
+       />
 </LinearLayout>
