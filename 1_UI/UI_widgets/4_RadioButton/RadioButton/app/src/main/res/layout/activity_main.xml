@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <!--1，单选按钮：默认垂直排列-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大熊猫的故乡在下列哪个国家？"
+        android:textSize="20sp"
+        android:textColor="#E91E63" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rbtn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国"
+            android:textColor="#4CAF50"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbtn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美国"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbtn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="德国"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbtn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="法国"
+            android:textSize="20sp"
+            />
+    </RadioGroup>
+
+    <!--2.单选按钮：设置水平排列-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="阿拉斯加州位于下列哪个国家？"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="#E91E63"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rbtn_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbtn_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美国"
+            android:textColor="#4CAF50"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbtn_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="德国"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbtn_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="法国"
+            android:textSize="20sp"
+            />
+
+
+
+
+
+
+
+
+    </RadioGroup>
+</LinearLayout>
