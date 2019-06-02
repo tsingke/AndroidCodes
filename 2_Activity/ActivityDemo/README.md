@@ -5,7 +5,7 @@
 
 <img src="https://github.com/tsingke/AndroidCodes/blob/master/2_Activity/ActivityDemo/home.png" width=200 height=364 />  <img src="https://github.com/tsingke/AndroidCodes/blob/master/2_Activity/ActivityDemo/log.png" width=200 height=364 />   <img src="https://github.com/tsingke/AndroidCodes/blob/master/2_Activity/ActivityDemo/reg.png" width=200 height=364 /> 
 
-核心实现源码
+页面跳转 java 核心实现源码
 
 ```java
 package com.example.activitydemo;
