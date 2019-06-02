@@ -10,6 +10,9 @@
 `lifetime` :    activity生命周期代码示例 
 
 
+<img src="https://github.com/tsingke/AndroidCodes/blob/master/2_Activity/lifetime/lifecycle.png" width=700 height=370 /> 
+
+
 生命周期演示核心java 源码
 
 ```java
