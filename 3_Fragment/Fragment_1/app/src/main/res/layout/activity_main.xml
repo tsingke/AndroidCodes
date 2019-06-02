@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MainActivity主页面"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#E91E63"
+        />
+
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_1"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="布局法添加两个fragment内容"
+
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_below="@id/tv_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/frag_1"
+            android:name="com.example.fragment.FragmentA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/frag_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:name="com.example.fragment.FragmentB"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <!--<TableLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--&gt;-->
+        <!--<TableRow>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="按钮1"-->
+                <!--android:background="#FFC107"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_weight="1"-->
+                <!--/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_2"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="按钮2"-->
+                <!--android:background="#CDDC39"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_toRightOf="@id/btn_1"-->
+                <!--android:layout_weight="1"-->
+                <!--/>-->
+        <!--</TableRow>-->
+    <!--</TableLayout>-->
+</RelativeLayout>
