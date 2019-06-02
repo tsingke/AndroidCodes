@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--这个帧布局用来显示各个Fragment页面-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_greenblue"
+        android:orientation="vertical"
+        android:id="@+id/ll_1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/android"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activit中显示Fragment页面(演示)"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#D81B60"
+            />
+    </FrameLayout>
+<!--放置 fragment 的三个导航栏-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <TableRow>
+
+            <Button
+                android:id="@+id/mbtn_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="登陆"
+                android:background="#AED581"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/mbtn_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="注册"
+                android:background="#FFB74D"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/mbtn_1"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/mbtn_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="反馈"
+                android:background="#4FC3F7"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/mbtn_3"
+                android:layout_weight="1"
+                />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

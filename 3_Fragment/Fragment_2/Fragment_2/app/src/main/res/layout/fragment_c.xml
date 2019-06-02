@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:padding="4dp"
+    tools:context=".MainActivity">
+
+    <!--TextView 放置文字说明-->
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#26C6DA"
+        android:gravity="center"
+        android:text="移动计算课程在线反馈页面"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--ImageView 显示主题logo-->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/phd" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="欢迎您提供反馈意见"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#43A047"
+            android:layout_height="wrap_content" />U
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:lines="6"
+            android:hint="我建议..."
+            android:padding="5dp"
+            android:textStyle="italic"
+            android:gravity="left|top"
+            android:background="#FFF9C4" />
+
+    </LinearLayout>
+
+
+    <!--Button 按钮: 提交信息-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--登陆按钮-->
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0288D1"
+            android:text="提交反馈"
+            android:textColor="#ffffff"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_patch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_log"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="#81000000"
+            android:textSize="15sp"
+
+            android:textStyle="italic" />
+        <!--注册按钮-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_reg"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="60dp"-->
+            <!--android:layout_toRightOf="@id/btn_log"-->
+            <!--android:background="#F06292"-->
+            <!--android:text="注册"-->
+            <!--android:textColor="#ffffff"-->
+
+            <!--android:textSize="20sp"-->
+            <!--android:textStyle="bold" />-->
+
+    </RelativeLayout>
+
+</LinearLayout>
