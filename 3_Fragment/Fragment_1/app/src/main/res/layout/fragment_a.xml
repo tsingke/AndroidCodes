@@ -22,5 +22,4 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/apple"
         />
-
 </LinearLayout>
