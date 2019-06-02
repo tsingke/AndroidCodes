@@ -8,11 +8,13 @@
 * **Fragment加载方法** :在Activity里加载Fragment
 
 a. 主页面Activity 效果图
-<img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/main.png" width=300 height=545 /> 
+
+<img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/main.png" width=200 height=363.2 /> 
+
 
 b.  三个 Fragment 页面效果图
 
-<img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/log.png" width=300 height=545 /> <img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/reg.png" width=300 height=545 /> <img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/feedback.png" width=300 height=545 /> 
+<img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/log.png" width=200 height=363.2 /> <img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/reg.png" width=200 height=363.2 /> <img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/feedback.png" width=200 height=363.2 /> 
 
 ---
 核心源码
