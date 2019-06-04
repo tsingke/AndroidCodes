@@ -14,6 +14,7 @@
 <img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_1/fragment_demo1.png" width=300 height=497.4 /> 
 
 
+**fragment布局代码**
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -66,4 +67,31 @@
             android:layout_weight="1" />
     </LinearLayout>
 </RelativeLayout>
+```
+
+**fragment java核心代码**
+
+```java
+package com.example.fragment;
+
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+public class FragmentA extends Fragment
+{
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
+    {
+        View view = inflater.inflate(R.layout.fragment_a, container, false);
+
+        return  view;
+    }
+}
+
 ```
