@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+    <!--说明文字-->
     <TextView
         android:id="@+id/tv_1"
         android:layout_width="match_parent"
@@ -23,10 +23,10 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-
         android:text="布局法添加两个fragment内容"
         android:textSize="20sp" />
 
+    <!--静态加载Fragment-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -39,7 +39,6 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
-
         <!--加载第二个fragment-->
         <fragment
             android:id="@+id/frag_2"

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -43,17 +44,26 @@ public class MainActivity extends AppCompatActivity
                 case R.id.mbtn_1:
                     AFragment aFragment = new AFragment();
                     ft.add(R.id.ll_1, aFragment);
+                    ft.addToBackStack(null);
+
                     ft.commit();
+                    Toast.makeText(MainActivity.this, "点击登录", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.mbtn_2:
                     BFragment bFragment = new BFragment();
                     ft.add(R.id.ll_1, bFragment);
+                    ft.addToBackStack(null);
                     ft.commit();
+                    Toast.makeText(MainActivity.this, "点击注册", Toast.LENGTH_SHORT).show();
+
                     break;
                 case R.id.mbtn_3:
                     CFragment cFragment = new CFragment();
                     ft.add(R.id.ll_1, cFragment);
+                    ft.addToBackStack(null);
                     ft.commit();
+                    Toast.makeText(MainActivity.this, "点击反馈", Toast.LENGTH_SHORT).show();
+
                     break;
             }
 

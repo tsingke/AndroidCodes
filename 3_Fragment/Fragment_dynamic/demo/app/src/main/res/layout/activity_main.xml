@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--这个帧布局用来显示各个Fragment页面-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_greenblue"
+        android:orientation="vertical"
+        android:id="@+id/frame_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/android"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activit中显示Fragment页面(演示)"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#D81B60"
+            />
+    </FrameLayout>
+    <!--放置 fragment导航栏-->
+    <Button
+        android:id="@+id/mbtn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击按钮显示Fragment"
+        android:textColor="#fff"
+        android:background="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
