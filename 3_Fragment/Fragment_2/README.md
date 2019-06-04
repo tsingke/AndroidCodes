@@ -14,8 +14,10 @@ a. 主页面Activity 效果图
 
 b.  三个 Fragment 页面效果图（分别点击登陆按钮、注册按钮、反馈按钮）
 
-<img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/log.png" width=200 height=363.2 />      <img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/reg.png" width=200 height=363.2 />      <img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/feedback.png" width=200 height=363.2 /> 
+<img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/fragmentdemo.gif" width=200 height=363.2> <img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/log.png" width=200 height=363.2 />      <img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/reg.png" width=200 height=363.2 />      <img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/feedback.png" width=200 height=363.2 /> 
 
+
+<img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_2/fragmentdemo.gif" width=200 height=363.2>
 ---
 核心源码
 
