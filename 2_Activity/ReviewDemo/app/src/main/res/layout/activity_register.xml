@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--顶部图片-->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo" />
+
+    <!--注册信息-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center">
+
+        <!--第一行:姓名栏-->
+        <TableRow>
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="姓名:"
+                android:textSize="20sp"
+                android:gravity="right"
+                 />
+
+            <EditText
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:hint="请输入您的姓名"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <!--第2行:学号栏-->
+        <TableRow>
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="学号:"
+                android:textSize="20sp"
+                android:gravity="right"
+                />
+
+            <EditText
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:hint="请输入个人学号"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <!--第3行:密码栏-->
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码:"
+                android:textSize="20sp"
+                android:layout_column="0"
+                android:gravity="right"
+                 />
+
+            <EditText
+                android:layout_width="253dp"
+                android:layout_height="50dp"
+                android:hint="请输入登陆密码"
+                android:inputType="textPassword"
+                android:layout_column="1"
+                android:gravity="center"
+                 />
+        </TableRow>
+
+        <!--第4行:手机栏-->
+        <TableRow>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:gravity="right"
+                android:text="手机:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="253dp"
+                android:layout_height="50dp"
+                android:hint="请输入手机号码"
+                android:gravity="center"/>
+        </TableRow>
+
+        <!--第5行:性别栏-->
+        <TableRow>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="性别:"
+                android:textSize="20sp"
+                android:gravity="right"/>
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="女" />
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+
+    <!--注册按钮-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_regs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="立 即 注 册"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#81C784"
+            android:gravity="center"
+          />
+    </RelativeLayout>
+
+</LinearLayout>

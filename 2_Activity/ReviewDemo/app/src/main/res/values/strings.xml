@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_login">登陆界面</string>
+    <string name="app_register">注册界面</string>
+</resources>
