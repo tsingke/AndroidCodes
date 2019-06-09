@@ -1,4 +1,7 @@
-# 复习巩固
+# UI设计+Activity综合巩固实例
+
+<img src="https://github.com/tsingke/AndroidCodes/blob/master/2_Activity/ReviewDemo/login.png" width=200  height=362.6 />  <img src="https://github.com/tsingke/AndroidCodes/blob/master/2_Activity/ReviewDemo/register.png" width=200  height=362.4  />
+
 
 **java代码**
 
