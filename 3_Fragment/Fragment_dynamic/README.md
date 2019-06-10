@@ -13,8 +13,8 @@
 <img src="https://github.com/tsingke/AndroidCodes/blob/master/3_Fragment/Fragment_dynamic/fragment.gif" width=300 height=600> 
 
 
-activity内加载fragment的核心代码（五大步骤）
 
+**main_activity.xml布局文件**
 
 ```xml
 
@@ -71,6 +71,8 @@ activity内加载fragment的核心代码（五大步骤）
 -----
 **在java类实现动态加载fragment的方法**
 -----
+
+activity内加载fragment的核心代码（五大步骤）
 
 
 ```java
