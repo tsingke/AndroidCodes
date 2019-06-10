@@ -64,9 +64,11 @@ activity内加载fragment的核心代码（五大步骤）
         android:layout_alignParentBottom="true"
         />
 </RelativeLayout>
-```
 
 
+----
+
+**在java类实现动态加载fragment的方法**
 
 ```java
 
