@@ -65,10 +65,13 @@ activity内加载fragment的核心代码（五大步骤）
         />
 </RelativeLayout>
 
+```
 
-----
 
+-----
 **在java类实现动态加载fragment的方法**
+-----
+
 
 ```java
 
@@ -123,6 +126,5 @@ public class MainActivity extends AppCompatActivity
 
     }
 }
-
 
 ```
