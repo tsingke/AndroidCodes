@@ -10,6 +10,10 @@
 `sharedprefence键值对方式存储` :    sharedprefence存储代码案例 
 
 
+效果图
+
+<img src="https://github.com/tsingke/AndroidCodes/blob/master/4_DataStore/SharedPreferences/sharedpreference.gif" width=200 height=400/>
+
 ```java
 package com.example.sharedpreferencesdemo;
 
