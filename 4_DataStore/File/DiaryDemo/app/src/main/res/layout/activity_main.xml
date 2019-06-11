@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C2185B"
+        android:gravity="center"
+        android:text="File文件存储:日记本演示"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日记主题："
+            android:layout_marginLeft="10dp"
+            android:textColor="#C2185B"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_topic"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_1">
+
+        <TextView
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日记时间："
+            android:layout_marginLeft="10dp"
+            android:gravity="right"
+            android:textColor="#C2185B"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_time"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <!--日记内容-->
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_below="@id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/note"
+        android:gravity="left"
+        android:hint="开始输入日记内容....."
+        />
+
+    <!--按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存日记"
+            android:textColor="#00796B"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看日记"
+            android:textColor="#303F9F"
+            android:layout_weight="1"
+
+            />
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出程序"
+            android:textColor="#B63A12"
+            android:layout_weight="1"
+
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
