@@ -13,3 +13,11 @@
 <img src="https://github.com/tsingke/AndroidCodes/blob/master/4_DataStore/File/diary.gif" width=200 height=400 />    <img src="https://github.com/tsingke/AndroidCodes/blob/master/4_DataStore/File/save.png" width=200 height=400 />    <img src="https://github.com/tsingke/AndroidCodes/blob/master/4_DataStore/File/show.png" width=200 height=400 />
 
 ---
+
+
+`Sharedpreferences键值对方式存储` :    sharedprefence存储代码案例 
+
+
+保存用户账号密码-效果图
+
+<img src="https://github.com/tsingke/AndroidCodes/blob/master/4_DataStore/SharedPreferences/sharedpreference.gif" width=200 height=400/>
