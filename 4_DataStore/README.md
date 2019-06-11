@@ -6,7 +6,7 @@
 ---
 
 
-**Android 文件存储Demo： 文件内部存储实现（存数据到文件，从文件读数据）**：
+**第一种方式： Android 文件存储Demo： 文件内部存储实现（存数据到文件，从文件读数据）**：
 
 ` 简易日记`效果-采用文件存储方式实现
 
@@ -15,7 +15,7 @@
 ---
 
 
-`Sharedpreferences键值对方式存储` :    sharedprefence存储代码案例 
+**第二种方式：`Sharedpreferences键值对方式存储` :    sharedprefence存储代码案例** 
 
 
 保存用户账号密码-效果图
