@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity
 
     private EditText et_content;
 
-    byte[] buffer = null;//定义保存日记信息的数组
+    byte[] buffer = null;//定义保存日记信息的字节数组
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

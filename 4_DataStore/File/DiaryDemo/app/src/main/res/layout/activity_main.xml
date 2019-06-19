@@ -18,6 +18,7 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <!--日记主题栏目-->
     <LinearLayout
         android:id="@+id/ll_1"
         android:layout_width="match_parent"
@@ -40,6 +41,7 @@
             android:layout_width="300dp" />
         </LinearLayout>
 
+    <!--日记时间记录栏目-->
     <LinearLayout
         android:id="@+id/ll_2"
         android:layout_width="match_parent"
@@ -63,7 +65,7 @@
             />
     </LinearLayout>
 
-    <!--日记内容-->
+    <!--核心：日记书写区域-->
     <EditText
         android:id="@+id/et_content"
         android:layout_below="@id/ll_2"
@@ -75,14 +77,13 @@
         android:hint="开始输入日记内容....."
         />
 
-    <!--按钮-->
+    <!--底部放置三个按钮-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_alignParentBottom="true"
         >
-
         <Button
             android:id="@+id/btn_save"
             android:layout_width="wrap_content"
@@ -108,11 +109,8 @@
             android:text="退出程序"
             android:textColor="#B63A12"
             android:layout_weight="1"
-
             />
 
-
     </LinearLayout>
-
 
 </RelativeLayout>
